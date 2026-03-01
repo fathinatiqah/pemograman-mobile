@@ -2,6 +2,8 @@
 
 ## Identitas Mahasiswa
 
+| Atribut | Nilai                   |
+| ------- | ----------------------- |
 | Nama    | Atiqah Fathin Fauziyyah |
 | NIM     | 244107060031            |
 | Kelas   | SIB-2E                  |
@@ -47,7 +49,7 @@ Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gun
 **Jawaban:**
 
 1. **Variabel**
-Variabel digunakan untuk menyimpan data yang akan diproses dalam program.
+- Variabel digunakan untuk menyimpan data yang akan diproses dalam program.
 
 Di Dart (Flutter menggunakan bahasa Dart), variabel bisa dibuat dengan beberapa cara:
    - var → tipe data ditentukan otomatis oleh sistem (type inference).
