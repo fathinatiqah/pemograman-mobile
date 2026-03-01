@@ -49,9 +49,7 @@ Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gun
 **Jawaban:**
 
 1. **Variabel**
-- Variabel digunakan untuk menyimpan data yang akan diproses dalam program.
-
-Di Dart (Flutter menggunakan bahasa Dart), variabel bisa dibuat dengan beberapa cara:
+   - Variabel digunakan untuk menyimpan data yang akan diproses dalam program. Di Dart (Flutter menggunakan bahasa Dart), variabel bisa dibuat dengan beberapa cara:
    - var → tipe data ditentukan otomatis oleh sistem (type inference).
    - final → nilainya hanya bisa diisi satu kali (tidak bisa diubah lagi).
    - const → konstanta yang nilainya sudah pasti saat compile-time.
