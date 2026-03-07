@@ -10,7 +10,7 @@
 
 ---
 
-## Tugas Praktikum 2
+## Tugas Praktikum
 
 ### Soal 1
 
