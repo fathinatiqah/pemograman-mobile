@@ -93,7 +93,8 @@ void main() {
 3. `print(data);`
     * Menampilkan isi list.
 
-Output dari program:
+Output dari program diatas:
+
 ![Langkah 3](img/prak1/langkah3.png)
 
 ---
@@ -137,7 +138,8 @@ print(names3);
 * names2 = {} juga membuat Set kosong bertipe String.
 * names3 = {} sebenarnya membuat Map kosong, bukan Set.
 
-Output dari Program:
+Output dari Program diatas:
+
 ![Langkah 3](img/prak2/langkah3.1.png)
 
 Tambahkan elemen nama dan NIM Anda pada kedua variabel Set tersebut dengan dua fungsi berbeda yaitu `.add()` dan `.addAll()`. Untuk variabel Map dihapus, nanti kita coba di praktikum selanjutnya.
@@ -167,7 +169,8 @@ void main() {
 }
 ```
 
-Output dari Program:
+Output dari Program diatas:
+
 ![Langkah 3](img/prak2/langkah3.2.png)
 
 ---
@@ -221,7 +224,8 @@ nobleGases[10] = 'neon';
 nobleGases[18] = 'argon';
 ```
 
-Output dari Program:
+Output dari Program diatas:
+
 ![Error Langkah 3](img/prak3/error_langkah3.png)
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki.
@@ -231,7 +235,8 @@ print(mhs1);
 print(mhs2);
 ```
 
-Hasil Program:
+Hasil Program diatas:
+
 ![Perbaikan Kode](img/prak3/langkah3.1.png)
 
 Tambahkan elemen nama dan NIM Anda pada tiap variabel di atas (gifts, nobleGases, mhs1, dan mhs2).
@@ -258,7 +263,8 @@ Tambahkan elemen nama dan NIM Anda pada tiap variabel di atas (gifts, nobleGases
   print(mhs2);
 ```
 
-Output dari Program:
+Output dari Program diatas:
+
 ![Langkah 3](img/prak3/langkah3.2.png)
 
 ---
@@ -631,7 +637,7 @@ void main() {
 }
 ```
 
-b. lexical closure : dungsi yang menyimpan variabel dari scope tempat fungsi tersebut dibuat, bahkan ketika fungsi dipanggil di tempat lain
+b. lexical closure : fungsi yang menyimpan variabel dari scope tempat fungsi tersebut dibuat, bahkan ketika fungsi dipanggil di tempat lain
 ```dart
 Function pembuat() {
   int angka = 0;
