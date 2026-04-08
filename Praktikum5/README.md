@@ -52,7 +52,7 @@ class MyTextWidget extends StatelessWidget {
 
 **Hasil Praktikum:**
 
-![Hasil Praktikum](img/prak4_langkah1.jpeg)
+![Hasil Praktikum](img/prak4_langkah1.png)
 
 ### Langkah 2
 
@@ -83,7 +83,7 @@ flutter:
 
 **Hasil Praktikum:**
 
-![Hasil Praktikum](img/prak4_langkah2.jpeg)
+![Hasil Praktikum](img/prak4_langkah2.png)
 
 ---
 
@@ -113,7 +113,7 @@ return MaterialApp(
 
 **Hasil Praktikum:**
 
-![Hasil Praktikum](img/prak5_langkah1.jpeg)
+![Hasil Praktikum](img/prak5_langkah1.png)
 
 ### Langkah 2
 
@@ -224,7 +224,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 **Hasil Praktikum:**
 
-![Hasil Praktikum](img/prak5_langkah3.jpg)
+![Hasil Praktikum](img/prak5_langkah3.png)
 
 ### Langkah 4
 
