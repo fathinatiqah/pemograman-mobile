@@ -225,3 +225,147 @@ Atur semua elemen dalam `ListView`, bukan Column, karena `ListView` mendukung sc
 ![Hasil Praktikum](img/hasilrun.png)
 
 ---
+
+
+## Praktikum 5: Membangun Navigasi di Flutter
+
+### Langkah 1
+
+Membuat sebuah project baru Flutter dengan nama belanja dan susunan folder seperti pada gambar berikut. Penyusunan ini dimaksudkan untuk mengorganisasi kode dan widget yang lebih mudah.
+
+![Langkah Praktikum](img/langkah1_prak5.png)
+
+### Hasil Langkah 2-7
+
+**1) lib/models/item.dart**
+
+```dart
+class Item {
+  String name;
+  int price;
+
+  Item({required this.name, required this.price});
+}
+```
+
+**2) lib/pages/home_page.dart**
+
+```dart
+import 'package:flutter/material.dart';
+import '../models/item.dart' as model;
+
+class HomePage extends StatelessWidget {
+  final List<model.Item> items = [
+  model.Item(name: 'Sugar', price: 5000),
+  model.Item(name: 'Salt', price: 2000),
+];
+
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Shopping List'),
+      ),
+      body: Container(
+        margin: const EdgeInsets.all(8),
+        child: ListView.builder(
+          padding: const EdgeInsets.all(8),
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            final item = items[index];
+            return InkWell(
+              onTap: () {
+                // Berpindah ke rute '/item'
+                Navigator.pushNamed(context, '/item');
+              },
+              child: Card(
+                child: Container(
+                  margin: const EdgeInsets.all(8),
+                  child: Row(
+                    children: [
+                      Expanded(child: Text(item.name)),
+                      Expanded(
+                        child: Text(
+                          item.price.toString(),
+                          textAlign: TextAlign.end,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+```
+
+**3) lib/pages/item_page.dart**
+
+```dart
+import 'package:flutter/material.dart';
+
+class ItemPage extends StatelessWidget {
+  const ItemPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Item Detail'),
+      ),
+      body: const Center(
+        child: Text('Ini adalah halaman detail item'),
+      ),
+    );
+  }
+}
+```
+
+**4) lib/main.dart**
+
+```dart
+import 'package:flutter/material.dart';
+// Import file halaman dan model yang sudah kamu buat sebelumnya
+import 'pages/home_page.dart';
+import 'pages/item_page.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Shopping List',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      // MENGGUNAKAN ROUTES SESUAI LANGKAH 3
+      // initialRoute menentukan halaman yang pertama kali muncul
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(),
+        '/item': (context) => ItemPage(),
+      },
+    );
+  }
+}
+```
+
+**Hasil Praktikum:**
+
+![Hasil Praktikum](img/hasilrun2.1.png)
+
+![Hasil Praktikum](img/hasilrun2.2.png)
+
+---
