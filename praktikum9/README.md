@@ -53,7 +53,7 @@ Future<void> main() async {
 
 Pastikan melakukan impor plugin sesuai yang dibutuhkan.
 
-### Langkah
+### Langkah 4
 
 Setelah Anda dapat mengakses kamera, gunakan langkah-langkah berikut untuk membuat dan menginisialisasi CameraController. Pada langkah berikut ini, Anda akan membuat koneksi ke kamera perangkat yang memungkinkan Anda untuk mengontrol kamera dan menampilkan pratinjau umpan kamera.
 
@@ -202,9 +202,7 @@ lib/widget/takepicture_screen.dart
 
 Silakan deploy pada device atau smartphone Anda dan perhatikan hasilnya! 
 
-![Output](img/prak1/output1.jpg)
-
-![Output](img/prak1/output2.jpg)
+![Output](img/prak1/output.gif)
 
 ---
 
